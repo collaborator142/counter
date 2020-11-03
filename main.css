@@ -1,0 +1,145 @@
+/* Roboto font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* common styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0.9turn, #9198e5, #e66465);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+
+button {
+    padding: 7px 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 2px #0000005e;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffffa3;
+}
+
+
+/* common styles end */
+
+
+/* form */
+
+.form {
+    margin: 90px 0px 20px 0px;
+}
+
+.time-input {
+    padding: 10px 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+select[name='format'] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 0px 10px;
+    background-color: #00ff44;
+}
+
+.set-btn {
+    background-color: #00ff44;
+}
+
+
+/* form styles end */
+
+
+/* countdown */
+
+.countdown {
+    font-size: 12rem;
+    margin-top: 20px;
+}
+
+@media screen and (max-height: 30rem) {
+    .countdown {
+        font-size: 10rem;
+        margin-top: 15px;
+    }   
+}
+
+@media screen and (max-height: 27rem) {
+    .countdown {
+        font-size: 9rem;
+        margin-top: 10px;
+    }   
+}
+
+@media screen and (max-height: 24rem) {
+    .countdown {
+        font-size: 8rem;
+        margin-top: 10px;
+    }   
+}
+
+/* countdown styles end */
+
+
+/* buttons */
+
+.stop-btn {
+    padding: 10px 20px;
+    background-color: #ff6344;
+}
+
+.step-btn {
+    padding: 10px 20px;
+    background-color: #fcff44;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(0, 174, 255);
+}
+
+
+/* buttons styles end */
+
+
+/* CUSTOM */
+
+.right {
+    padding: 2rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.right > h1 {
+    font-size: 2rem;
+}
+
+th {
+    min-width: 150px;
+}
+
+th, td {
+    font-size: 2rem;
+    padding: 2px;
+}

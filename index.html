@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./main.css"/>
+  <title>CountDown Timer</title>
+</head>
+<body>
+
+  <div class="container">
+    <form class="form">
+      <input type="number" min="0" max="59" value="5" class="time-minutes" placeholder="分" style="width: 3rem;">
+      <input type="number" min="0" max="59" value="0" class="time-seconds" placeholder="秒" style="width: 3rem;">
+
+      <button type="submit" class="set-btn">START</button>
+    </form>
+
+    <p class="countdown">00:00<span style="font-size: 0.4em;">.000</span></p>
+
+    <div class="buttons">
+      <button class="stop-btn" disabled>PAUSE</button>
+      <button class="step-btn" disabled>STEP</button>
+      <button class="reset-btn" disabled>RESET</button>
+    </div>
+  </div>
+
+  <div class="container right">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>時間</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
